@@ -2,6 +2,22 @@
 
 This repository contains a minimal Electron application built using the Vite project and initialized with Electron Forge. It serves as a streamlined starting point for developing Electron applications with modern tooling.
 
+## Development
+
+```bash
+npm install -g pnpm
+```
+
+```bash
+pnpm install
+```
+
+```bash
+pnpm run start
+```
+
+NPM will cause insufficient memory error when releasing packages, so use pnpm instead.
+
 ## Key Modifications
 
 To ensure optimal functionality, the following adjustments were made to the standard template:
@@ -9,7 +25,7 @@ To ensure optimal functionality, the following adjustments were made to the stan
 1. Configuration file conversion:
 
 - Changed `forge.config.ts` to `forge.config.js`
-- Updated package.json to include `"type": "module"`
+- Updated `package.json` to include `"type": "module"`
 - These changes ensure Vite loads correctly with ES module syntax
 
 2. Dependencies:
