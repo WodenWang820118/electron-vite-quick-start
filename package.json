@@ -37,7 +37,7 @@
     "email": "guanxinwang0118@gmail.com"
   },
   "license": "MIT",
-  "packageManager": "npm@10.8.3",
+  "packageManager": "pnpm@9.12.2",
   "dependencies": {
     "electron-squirrel-startup": "^1.0.1",
     "electron-vite": "file:",
