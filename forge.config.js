@@ -60,7 +60,7 @@ const config = {
       config: {
         repository: {
           owner: "WodenWang820118",
-          name: "tag-check",
+          name: "electron-vite-quick-start",
         },
         prerelease: false,
       },
