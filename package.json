@@ -2,8 +2,13 @@
   "name": "electron-vite-quick-start",
   "productName": "electron-vite-quick-start",
   "version": "1.0.0",
+  "type": "module",
   "description": "My Electron application description",
   "main": ".vite/build/main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WodenWang820118/electron-vite-quick-start.git"
+  },
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
@@ -20,6 +25,7 @@
     "@electron-forge/plugin-auto-unpack-natives": "^7.5.0",
     "@electron-forge/plugin-fuses": "^7.5.0",
     "@electron-forge/plugin-vite": "^7.5.0",
+    "@electron-forge/publisher-github": "^7.5.0",
     "@electron/fuses": "^1.8.0",
     "@types/electron-squirrel-startup": "^1",
     "electron": "33.0.1",

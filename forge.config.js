@@ -14,7 +14,7 @@ const config = {
   rebuildConfig: {},
   makers: [
     new MakerSquirrel({}),
-    new MakerZIP({}, ["darwin"]),
+    new MakerZIP({}, ["darwin", "linux", "win32"]),
     new MakerRpm({}),
     new MakerDeb({}),
   ],
@@ -53,6 +53,18 @@ const config = {
       [FuseV1Options.EnableEmbeddedAsarIntegrityValidation]: true,
       [FuseV1Options.OnlyLoadAppFromAsar]: true,
     }),
+  ],
+  publishers: [
+    {
+      name: "@electron-forge/publisher-github",
+      config: {
+        repository: {
+          owner: "WodenWang820118",
+          name: "tag-check",
+        },
+        prerelease: false,
+      },
+    },
   ],
 };
 
